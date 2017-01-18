@@ -1,13 +1,12 @@
 body {
     background-color: whitesmoke;
-
 }
 
 #banner {
     height: 175px;
-    border-radius:20px;
-    text-align:center;
-    padding-top:25px;
+    border-radius: 20px;
+    text-align: center;
+    padding-top: 25px;
     /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(green, lightgreen);
     /* For Safari 5.1 to 6.0 */
@@ -20,14 +19,13 @@ body {
 }
 
 .win {
-    color:green;
+    color: green;
 }
 
 .loss {
-    color:red;
+    color: red;
 }
 
 .tie {
-    color:grey;
+    color: grey;
 }
-
