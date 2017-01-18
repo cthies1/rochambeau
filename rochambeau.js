@@ -13,16 +13,24 @@ function playGame(){
         // We have a tie!
         console.log("tie");
         return 0;
-    } else if (playerChoice == 0 && computerChoice == 2) {
-        // Rock beats scissors - a win!
+    } else if (playerChoice == 0 && computerChoice == 2 || computerChoice == 4) {
+        // Rock beats Scissors/Lizard - a win!
         console.log("win");
         return 1;
-    } else if (playerChoice == 1 && computerChoice == 0) {
-        // Paper beats scissors - a win!
+    } else if (playerChoice == 1 && computerChoice == 0 || computerChoice == 3) {
+        // Paper beats Rock/Spock - a win!
         console.log("win");
         return 1;
-    } else if (playerChoice == 2 && computerChoice == 1) {
-        // Scissors beats paper - a win!
+    } else if (playerChoice == 2 && computerChoice == 1 || computerChoice == 4) {
+        // Scissors beats Paper/Lizard - a win!
+        console.log("win");
+        return 1;
+    } else if (playerChoice == 3 && computerChoice == 2 || computerChoice == 0) {
+        // Spock beats Scissors/Rock - a win!
+        console.log("win");
+        return 1;
+    } else if (playerChoice == 4 && computerChoice == 1 || computerChoice == 3) {
+        // Lizard beats Paper/Spock - a win!
         console.log("win");
         return 1;
     } else {
