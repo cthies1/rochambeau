@@ -57,8 +57,8 @@ function updateScore(val) {
 }
 
 function displayGameResult(resultId) {
-    // Define an array of text labels for the choices 0, 1, 2;
-    var choices = ["Rock", "Paper", "Scissors"];
+    // Define an array of text labels for the choices 0, 1, 2, 3 ,4;
+    var choices = ["Rock", "Paper", "Scissors", "Spock", "Lizard"];
     // Now play the game and store the result
     var result = playGame();
     // Create a message for the player
@@ -73,7 +73,7 @@ function displayGameResult(resultId) {
     else if (result == -1) {
         updateScore(2);
         // Display that it was a loss
-        document.getElementById(resultId).innerHTML = message + "YOU LOOSE! ";
+        document.getElementById(resultId).innerHTML = message + "YOU LOSE! ";
         document.getElementById(resultId).className = "alert alert-danger";
     }
     else {
