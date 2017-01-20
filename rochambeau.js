@@ -2,7 +2,7 @@
 // score[0] = wins, score[1] = ties, score[2] = losses
 var score = [0, 0, 0];
 // The variables store the current player's and computer's choices
-// 0 = Rock, 1 = Paper, 2 = Scissors
+// 0 = Rock, 1 = Paper, 2 = Scissors, 3 = Spock, 4 = Lizard
 var playerChoice;
 var computerChoice;
 
