@@ -56,6 +56,16 @@ function updateScore(val) {
     console.log("The score is now " + score);
 }
 
+function displayMatchBoard(winsId, lossesId) {
+    document.getElementById(winsId).innerHTML = score[0];
+    document.getElementById(lossesId).innerHTML = score[2];
+}
+
+function updateMatch(val) {
+    ++score[val];
+    console.log("The score is now " + score);
+}
+
 function displayGameResult(resultId) {
     // Define an array of text labels for the choices 0, 1, 2, 3 ,4;
     var choices = ["Rock", "Paper", "Scissors", "Spock", "Lizard"];
