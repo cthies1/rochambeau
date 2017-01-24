@@ -64,7 +64,7 @@ function updateScore(val) {
         updateMatch(0);
         resetScore();
 
-    } else if (score [1] == 2){
+    } else if (score [1] == 2) {
         updateMatch(2);
         resetScore();
 
