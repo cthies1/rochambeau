@@ -75,11 +75,7 @@ function updateMatch(val) {
 }*/
 
 function displayGameResult(resultId) {
-<<<<<<< HEAD
     // Define an array of text labels for the choices 0, 1, 2, 3, 4;
-=======
-    // Define an array of text labels for the choices 0, 1, 2, 3 ,4;
->>>>>>> origin/master
     var choices = ["Rock", "Paper", "Scissors", "Spock", "Lizard"];
     // Now play the game and store the result
     var result = playGame();
