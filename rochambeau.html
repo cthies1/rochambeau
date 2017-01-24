@@ -1,4 +1,4 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
     <html lang="en">
 
     <head>
@@ -16,8 +16,8 @@
         <p/>
         <p/>
         <div class="container">
-            <h1>Rock, Paper, Scissors Game</h1>
-            <p>Let's Play Rock, Paper, Scissors! Press your choice and then press PLAY!.</p>
+            <h1>Rock, Paper, Scissors, Spock, Lizard Game</h1>
+            <p>Let's Play Rock, Paper, Scissors, Spock, Lizard! Press your choice and then press PLAY!.</p>
             <div class="btn-group" role="group" aria-label="...">
                 <button type="button" class="btn btn-default" onclick="storePlayerChoice(0)">Rock</button>
                 <button type="button" class="btn btn-default" onclick="storePlayerChoice(1)">Paper</button>
@@ -43,7 +43,22 @@
                     </tr>
                 </table>
             </div>
+              <p></p>
+            <input type="button" onclick="displayGameResult('result'), displayMatchBoard('wins', 'losses')" value="Play" class="btn btn-primary">
+            <p></p>
+            <div id="result"></div>
+            <div id="matchboard">
+                <table class="table">
+                    <tr>
+                        <td>Wins:</td>
+                        <td>Losses:</td>
+                    </tr>
+                    <tr>
+                        <td id="wins">0</td>
+                        <td id="losses">0</td>
+                    </tr>
+                </table>
+            </div>
         </div>
     </body>
-
     </html>
