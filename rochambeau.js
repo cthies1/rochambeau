@@ -59,14 +59,20 @@ function updateScore(val) {
     console.log("The score is now " + score);
 }
 
-function displayMatchBoard(winsId, lossesId) {
-    document.getElementById(winsId).innerHTML = match[0];
-    document.getElementById(lossesId).innerHTML = match[2];
-}
+/*function displayMatchBoard(________) {
+    if (score [0] == 2) {
+        updateMatch(0);
+        resetScore();
 
-function updateMatch(val) {
-    ++score[val];
+    } else if (score [1] == 2){
+        updateMatch(2);
+        resetScore();
+
+    }
 }
+function updateMatch(val) {
+    ++match[val];
+}*/
 
 function displayGameResult(resultId) {
 <<<<<<< HEAD
