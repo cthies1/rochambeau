@@ -64,19 +64,19 @@ function displayMatchBoard(matchesWonId, matchesLostId) {
     document.getElementById(matchesLostId).innerHTML = match[1];
 }
 
-function displayMatchResult(matchResultID) {
+function displayMatchResult(matchResultId) {
     var matchMessage = "";
     if (score[0] == 2) {
         updateMatch(0);
         matchMessage = "MATCH WON!";
-        document.getElementById(matchResultID).innerHTML = matchMessage;
-        document.getElementById(matchResultID).className = "alert alert-success";
+        document.getElementById(matchResultId).innerHTML = matchMessage;
+        document.getElementById(matchResultId).className = "alert alert-success";
         score = [0, 0, 0];
     }else if (score[1] == 2) {
         updateMatch(1);
         matchMessage = "MATCH LOST";
-        document.getElementById(matchResultID).innerHTML = matchMessage;
-        document.getElementById(matchResultID).className = "alert alert-danger";
+        document.getElementById(matchResultId).innerHTML = matchMessage;
+        document.getElementById(matchResultId).className = "alert alert-danger";
         score = [0, 0, 0];
     }
 }
