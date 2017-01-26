@@ -73,8 +73,9 @@ function displayMatchResult(matchResultID) {
     }
     else if (score[1] == 2) {
         updateMatch(1);
-        var message = "MATCH LOST";
-        //document.getElementById(resultId).className = "alert alert-danger";
+        var matchMessage = "MATCH LOST";
+        //document.getElementById(matchResultId).innerHTML = matchMessage;
+        //document.getElementById(matchResultId).className = "alert alert-danger";
         score = [0, 0, 0];
     }
 }
