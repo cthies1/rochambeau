@@ -59,14 +59,12 @@ function updateScore(val) {
     console.log("The score is now " + score);
 }
 
-/*function displayMatchBoard(________) {
+/*function displayMatchBoard(wins,losses) {
     if (score [0] == 2) {
         updateMatch(0);
-        resetScore();
 
     } else if (score [1] == 2) {
         updateMatch(2);
-        resetScore();
 
     }
 }
@@ -110,6 +108,6 @@ function storePlayerChoice(choice) {
 
 function storeComputerChoice() {
     // Generate computer's random choice
-    computerChoice = Math.floor(Math.random() * 3);
+    computerChoice = Math.floor(Math.random() * 5);
     console.log("Computer choice = " + computerChoice);
 }
