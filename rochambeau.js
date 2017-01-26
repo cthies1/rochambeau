@@ -72,7 +72,8 @@ function displayMatchResult(matchResultId) {
         document.getElementById(matchResultId).innerHTML = matchMessage;
         document.getElementById(matchResultId).className = "alert alert-success";
         score = [0, 0, 0];
-    }else if (score[1] == 2) {
+    }
+    else if (score[1] == 2) {
         updateMatch(1);
         matchMessage = "MATCH LOST";
         document.getElementById(matchResultId).innerHTML = matchMessage;
