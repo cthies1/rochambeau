@@ -59,32 +59,10 @@ function updateScore(val) {
     console.log("The score is now " + score);
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-function displayMatchBoard(winsId, lossesId) {
-    document.getElementById(winsId).innerHTML = score[0];
-    document.getElementById(lossesId).innerHTML = score[2];
-}
-
-function updateMatch(val) {
-    ++score[val];
-    console.log("The score is now " + score);
-}
-=======
-/*function displayMatchBoard(________) {
-    if (score [0] == 2) {
-        updateMatch(0);
-        resetScore();
-
-    } else if (score [1] == 2){
-        updateMatch(2);
-        resetScore();
-=======
 function displayMatchBoard(matchesWonId, matchesLostId) {
     document.getElementById(matchesWonId).innerHTML = match[0];
     document.getElementById(matchesLostId).innerHTML = match[1];
 }
->>>>>>> origin/master
 
 function displayMatchResult(matchResultID) {
     if (score[0] == 2) {
@@ -104,12 +82,7 @@ function displayMatchResult(matchResultID) {
 
 function updateMatch(val) {
     ++match[val];
-<<<<<<< HEAD
-}*/
->>>>>>> origin/master
-=======
 }
->>>>>>> origin/master
 
 function displayGameResult(resultId) {
     // Define an array of text labels for the choices 0, 1, 2, 3, 4;
