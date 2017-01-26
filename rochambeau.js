@@ -67,15 +67,10 @@ function displayMatchBoard(matchesWonId, matchesLostId) {
 function displayMatchResult(matchResultID) {
     if (score[0] == 2) {
         updateMatch(0);
-        var message = "MATCH WON!";
-        //document.getElementById(resultId).className = "alert alert-success";
         score = [0, 0, 0];
     }
     else if (score[1] == 2) {
         updateMatch(1);
-        var matchMessage = "MATCH LOST";
-        //document.getElementById(matchResultId).innerHTML = matchMessage;
-        //document.getElementById(matchResultId).className = "alert alert-danger";
         score = [0, 0, 0];
     }
 }
