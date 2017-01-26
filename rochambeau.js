@@ -66,10 +66,7 @@ function displayMatchBoard(matchesWonId, matchesLostId) {
 
 function displayMatchResult(matchResultID) {
     var matchMessage = "";
-    if(score[0] + score[1] + score[2] < 3){
-        matchMessage = "Match in progress";
-        //html stuff
-    }else if (score[0] == 2) {
+    if (score[0] == 2) {
         updateMatch(0);
         matchMessage = "MATCH WON!";
         document.getElementById(matchResultID).innerHTML = matchMessage;
@@ -78,8 +75,8 @@ function displayMatchResult(matchResultID) {
     }else if (score[1] == 2) {
         updateMatch(1);
         matchMessage = "MATCH LOST";
-        //document.getElementById(matchResultId).innerHTML = matchMessage;
-        //document.getElementById(matchResultId).className = "alert alert-danger";
+        document.getElementById(matchResultID).innerHTML = matchMessage;
+        document.getElementById(matchResultID).className = "alert alert-danger";
         score = [0, 0, 0];
     }
 }
